@@ -1,0 +1,53 @@
+/* Mobile View Styling */
+@media (max-width: 576px) {
+    .service-area .col {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .service-area .service-box {
+        flex-direction: column;
+        background: #fff;
+        border: 1px solid #e5e5e5;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* Hover effect */
+    .service-area .service-box:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+
+    /* Icon */
+    .service-area .service-box .icon {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .service-area .service-box .icon img {
+        max-width: 60px;
+    }
+
+    /* Title */
+    .service-area .service-box .title {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+
+    /* Description */
+    .service-area .service-box p {
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+    }
+}

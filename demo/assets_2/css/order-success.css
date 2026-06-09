@@ -1,0 +1,93 @@
+.thank-you-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #f7f7f7;
+  min-height: 80vh;
+  box-sizing: border-box;
+}
+
+.thank-you-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px 30px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.checkmark-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #28a745;
+}
+
+.thank-you-card h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.thank-you-card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.thank-you-card .subtext {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  font-size: 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: #82001d;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #a31a32;
+}
+
+.btn-outline {
+  border: 2px solid #82001d;
+  color: #82001d;
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: #82001d;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .thank-you-card {
+    padding: 30px 20px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

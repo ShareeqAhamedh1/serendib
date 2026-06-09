@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# When folder is accessed, redirect to dashboard
+RewriteRule ^$ dashboard.php [L]

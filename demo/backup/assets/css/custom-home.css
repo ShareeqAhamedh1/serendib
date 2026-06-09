@@ -1,0 +1,424 @@
+/* Container Row Customization */
+.category-grid {
+  margin-top: 20px;
+}
+
+/* Category Card Styling */
+.category-card {
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 16px 10px;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mobile-categories,
+.mobile-best-deal,
+.mobile-delivery-post {
+  visibility: hidden;
+  display: none;
+}
+
+.desktop-categories,
+.desktop-best-deal,
+.desktop-delivery-post {
+  visibility: visible;
+  display: block;
+}
+
+.category-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
+}
+
+/* Image Styling */
+.cate-thumb img {
+  width: 100%;
+  max-width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto 12px auto;
+  display: block;
+}
+
+/* Category Title Styling */
+.cat-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .cate-thumb img {
+    max-width: 100px;
+    height: 100px;
+  }
+
+  .cat-title {
+    font-size: 14px;
+  }
+}
+
+.category-slider-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 100vw; /* full viewport width */
+  overflow: visible; /* let arrows overflow */
+  padding: 0 50px; /* leave space for arrows inside wrapper */
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* Container that hides overflow and takes full viewport width */
+.category-slider-container {
+  overflow: hidden;
+  flex: 1;
+  position: relative;
+  width: 100vw; /* full viewport width */
+  max-width: 100%;
+}
+
+/* The sliding element */
+.category-slider {
+  display: flex;
+  transition: transform 0.3s ease;
+  will-change: transform;
+  /* width automatic from content */
+}
+
+/* Each container takes full width of .category-slider-container */
+.category-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 0 0 100%; /* IMPORTANT: full width per container */
+  box-sizing: border-box;
+}
+
+/* Cards inside container */
+.category-container .category-card {
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 16px 10px;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Arrows styling - on top of slider container */
+.cat-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: 1.5px solid #ccc;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  font-size: 22px;
+  line-height: 1;
+  color: #444;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  user-select: none;
+  z-index: 10; /* on top */
+  background-clip: padding-box;
+}
+
+.cat-arrow:hover {
+  background-color: #f0f0f0;
+  color: #111;
+}
+
+/* Left arrow on left edge */
+.left-arrow {
+  left: 10px;
+}
+
+/* Right arrow on right edge */
+.right-arrow {
+  right: 10px;
+}
+
+/* Optional: disable arrow if at start/end */
+.cat-arrow:disabled {
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .cat-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+  .category-slider-wrapper {
+    padding: 0 40px;
+  }
+  .left-arrow {
+    left: 5px;
+  }
+  .right-arrow {
+    right: 5px;
+  }
+}
+
+@media (max-width: 567px) {
+  .mobile-categories,
+  .mobile-best-deal,
+  .mobile-delivery-post {
+    visibility: visible;
+    display: block;
+  }
+
+  .desktop-categories,
+  .desktop-best-deal,
+  .desktop-delivery-post {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+.bestseller-slider-wrapper {
+  position: relative;
+  max-width: 100%;
+  margin-top: 1rem;
+  padding: 0 50px; /* space for arrows */
+}
+
+.bestseller-slider-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.bestseller-slider {
+  display: flex;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.bestseller-slide {
+  flex: 0 0 100%; /* each slide takes full container width */
+  box-sizing: border-box;
+}
+
+/* Arrow styling */
+.bestseller-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: 1.5px solid #ccc;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  font-size: 22px;
+  color: #444;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  user-select: none;
+  z-index: 10;
+}
+
+.bestseller-arrow:hover {
+  background-color: #f0f0f0;
+  color: #111;
+}
+
+.bestseller-arrow.left-arrow {
+  left: 10px;
+}
+
+.bestseller-arrow.right-arrow {
+  right: 10px;
+}
+
+/* Disable arrow style */
+.bestseller-arrow:disabled {
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Responsive arrow sizing */
+@media (max-width: 567px) {
+  .bestseller-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+  .bestseller-slider-wrapper {
+    padding: 0 40px;
+  }
+  .bestseller-arrow.left-arrow {
+    left: 5px;
+  }
+  .bestseller-arrow.right-arrow {
+    right: 5px;
+  }
+}
+
+/* Basic desktop layout - show both side by side */
+.delivery-slider {
+  display: flex;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+
+.delivery-slide {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+}
+
+/* Hide dots on desktop */
+.delivery-dots {
+  display: none;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 567px) {
+  /* slider container */
+  .delivery-slider-wrapper {
+    position: relative;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  /* Show only 1 slide at a time */
+  .delivery-slider {
+    display: flex;
+    transition: transform 0.3s ease;
+    will-change: transform;
+    scroll-behavior: smooth;
+    gap: 0;
+  }
+
+  .delivery-slide {
+    flex: 0 0 100%; /* since slider is 200%, each slide is 50% of slider */
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Show dots navigation */
+  .delivery-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 10px;
+  }
+
+  .delivery-dots .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1.5px solid #888;
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+
+  .delivery-dots .dot.active {
+    background-color: #444;
+    border-color: #444;
+  }
+}
+
+.view-btn {
+  border: 2px solid #82001d;
+  font-size: 13px;
+  border-radius: 7px;
+  padding: 5px 10px;
+  color: #82001d;
+}
+
+.view-btn:hover {
+  background: #82001d;
+  color: #ffffff;
+}
+
+.product-collection .collection-content {
+  right: 10px;
+  background: rgba(255, 255, 255, 0.55); /* white with 85% opacity */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Optional hover effect */
+/* Cookie Banner */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #f9f9f9;
+  border-top: 1px solid #ccc;
+  padding: 20px;
+  z-index: 9999;
+  display: none;
+}
+.cookie-content {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+.cookie-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#cookie-accept { background: #0073e6; color: white; }
+#cookie-reject, #cookie-reject-modal { background: #e03e2f; color: white; }
+#cookie-settings, #cookie-save { background: #444; color: white; }
+
+/* Modal */
+.cookie-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+}
+.cookie-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+}
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}

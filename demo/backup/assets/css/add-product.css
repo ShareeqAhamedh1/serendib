@@ -1,0 +1,99 @@
+/* Root container */
+.axil-dashboard-order .card {
+  display: contents;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+}
+
+/* Form container styling */
+.axil-dashboard-order form {
+  padding: 20px;
+}
+
+/* Title and subtitle */
+.axil-dashboard-order h4.modal-title {
+  font-size: 1.8rem;
+  color: #82001d;
+}
+
+.axil-dashboard-order p.text-muted {
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+/* Input and select */
+.axil-dashboard-order .form-control {
+  border-radius: 8px;
+  border: 1px solid #6c757d;
+  padding: 10px 15px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.axil-dashboard-order .btn {
+  color: #82001d;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.axil-dashboard-order .btn:hover {
+  color: #ddd;
+  background-color: #82001d;
+}
+
+.axil-dashboard-order .form-control:focus {
+  border-color: #82001d;
+  box-shadow: 0 0 0 0.2rem rgba(130, 0, 29, 0.15);
+}
+
+/* Label styling */
+.axil-dashboard-order .form-label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: inline-block;
+  color: #333;
+}
+
+/* Button style */
+.axil-dashboard-order button[type="submit"] {
+  background-color: #82001d;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.axil-dashboard-order button[type="submit"]:hover {
+  background-color: #a31c36;
+}
+
+/* Responsive tweaks */
+@media (max-width: 992px) {
+  .axil-dashboard-order .form-group {
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .axil-dashboard-order h4.modal-title {
+    font-size: 1.5rem;
+  }
+
+  .axil-dashboard-order .form-control {
+    font-size: 0.95rem;
+  }
+
+  .axil-dashboard-order button[type="submit"] {
+    font-size: 0.95rem;
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .axil-dashboard-order .container {
+    padding: 1rem;
+  }
+}

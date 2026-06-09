@@ -1,0 +1,306 @@
+/* Table Styling */
+.table {
+  border-collapse: collapse;
+  margin-bottom: 0;
+}
+
+.table thead {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.table th,
+.table td {
+  vertical-align: middle !important;
+  text-align: center;
+}
+
+/* ===== Table Base Styles ===== */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.table thead {
+  background-color: #212529;
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.table .thead-dark th {
+  padding: 12px;
+  vertical-align: middle;
+  border-bottom: 1px solid #dee2e6;
+  font-weight: bolder;
+  background-color: beige;
+}
+
+/* ===== Alternating Row Colors ===== */
+.table tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* White */
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f3f0;
+}
+
+.table tbody td {
+  padding: 12px;
+  border-bottom: 1px solid #dee2e6;
+  vertical-align: middle;
+}
+
+/* ===== Hover Effect ===== */
+.table tbody tr:hover {
+  background-color: #e9ecef !important;
+}
+
+/* ===== Image Styling ===== */
+.table img.img-thumbnail {
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* ===== Action Buttons ===== */
+.table .btn {
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-right: 5px;
+}
+
+/* ===== Responsive Table ===== */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+  .table thead {
+    display: none;
+  }
+
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+
+  .table tr {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    background-color: #fff;
+  }
+
+  .table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .table td {
+    text-align: left;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: 600;
+    color: #495057;
+  }
+
+  .table .btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+.my-account .container {
+  max-width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Table Styling */
+.table {
+  border-collapse: collapse;
+  margin-bottom: 0;
+}
+
+.table thead {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.table th,
+.table td {
+  vertical-align: middle !important;
+  text-align: center;
+}
+
+/* Image Thumbnails */
+.img-thumbnail {
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.img-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+/* Modal Image */
+#modalImage {
+  border: 2px solid #ddd;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  .table th,
+  .table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .modal-dialog {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 576px) {
+  button.btn {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .modal-title {
+    font-size: 18px;
+  }
+
+  .form-label {
+    font-size: 14px;
+  }
+
+  #modalImage {
+    max-width: 100%;
+    max-height: 300px;
+  }
+}
+/* Button Customization */
+.btn-primary,
+.btn-danger,
+.btn-warning {
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+
+.btn-close {
+  font-size: 0.9rem;
+}
+
+/* Textarea Resizing */
+textarea.form-control {
+  resize: vertical;
+}
+/* ===== Table Base Styles ===== */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.table thead {
+  background-color: #212529;
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.table .thead-dark th {
+  padding: 12px;
+  vertical-align: middle;
+  border-bottom: 1px solid #dee2e6;
+  font-weight: bolder;
+  background-color: beige;
+}
+
+/* ===== Alternating Row Colors ===== */
+.table tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* White */
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f3f0;
+}
+
+.table tbody td {
+  padding: 12px;
+  border-bottom: 1px solid #dee2e6;
+  vertical-align: middle;
+}
+
+/* ===== Hover Effect ===== */
+.table tbody tr:hover {
+  background-color: #e9ecef !important;
+}
+
+/* ===== Image Styling ===== */
+.table img.img-thumbnail {
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* ===== Action Buttons ===== */
+.table .btn {
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-right: 5px;
+}
+
+/* ===== Responsive Table ===== */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 10px;
+}
+
+.axil-dashboard-order .btn-danger[type="submit"] {
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-right: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.axil-dashboard-order .table thead th:last-child {
+  text-align: center;
+}

@@ -1,0 +1,19 @@
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 48px;
+    margin-bottom: 15px;
+    animation: fadeInUp 1s;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s 0.2s both;
+}

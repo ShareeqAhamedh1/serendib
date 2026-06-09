@@ -1,0 +1,311 @@
+/* Custom Header Styles */
+
+/* General header area */
+.header-style-7 .axil-mainmenu {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 15px 20px;
+  z-index: 99;
+  border-bottom: 4px solid #82001d;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Brand logos */
+.header-brand .logo img {
+  max-height: 60px;
+  transition: 0.3s ease;
+}
+
+.header-brand .logo:hover img {
+  opacity: 0.8;
+}
+
+/* Main menu */
+.header-main-nav .mainmenu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.header-main-nav .mainmenu > li > a {
+  font-weight: 600;
+  color: #222;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+
+.header-main-nav .mainmenu > li > a:hover {
+  color: #007bff;
+}
+
+.mainmenu li > a.active {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  color: #80011f;
+  margin-top: 5px;
+  border-radius: 2px;
+  font-size: 16px;
+}
+
+/* Dropdown styles */
+
+.mainmenu .dropdown-menu li a {
+  padding: 10px 20px;
+  color: #333;
+  font-size: 14px;
+  display: block;
+  transition: 0.3s ease;
+}
+
+.mainmenu .dropdown-menu li a:hover {
+  background-color: #f5f5f5;
+  color: #007bff;
+}
+
+/* Account dropdown */
+.my-account {
+  position: relative;
+}
+
+.my-account:hover .my-account-dropdown {
+  display: block;
+}
+
+.my-account-dropdown .title {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.my-account-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px;
+}
+
+.my-account-dropdown ul li {
+  margin-bottom: 8px;
+}
+
+.my-account-dropdown ul li a,
+.my-account-dropdown-client ul li a,
+.my-account-dropdown-seller ul li a {
+  color: #222;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.my-account-dropdown ul li a:hover,
+.my-account-dropdown-client ul li a:hover,
+.my-account-dropdown-seller ul li a:hover {
+  color: #007bff;
+}
+
+.my-account-dropdown .reg-footer,
+.my-account-dropdown-client .reg-footer,
+.my-account-dropdown-seller .reg-footer {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+/* Cart and icons */
+.action-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+
+.action-list li a:hover {
+  color: #007bff;
+}
+
+.cart-count {
+  background-color: #80011f;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 11px;
+  padding: 2px 6px;
+  position: absolute;
+  top: -6px;
+  right: -10px;
+}
+
+/* Mobile menu toggle */
+.axil-mobile-toggle .menu-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #333;
+}
+
+/* Search Input (Optional Style) */
+.axil-search input.product-search-input {
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 6px 12px;
+  width: 200px;
+  transition: all 0.3s ease;
+}
+
+.axil-search input.product-search-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+@media only screen and (max-width: 575px) {
+  .header-style-7 .axil-mainmenu {
+    padding: 10px;
+  }
+
+  .header-brand .logo img {
+    max-height: 40px;
+  }
+
+  .action-list {
+    gap: 10px;
+  }
+
+  .header-action > ul > li > a > i {
+    font-size: 16px;
+  }
+
+  .axil-mobile-toggle .menu-btn i {
+    font-size: 18px;
+  }
+
+  .section-title-border.slider-section-title .title {
+    padding-right: 0;
+  }
+}
+
+/* User Type Switch Buttons */
+.action-list .user-type-switch {
+  margin: 0;
+}
+
+.user-type-switch .btn-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.user-type-switch .btn {
+  font-size: var(--font-size-b1);
+  line-height: var(--line-height-b1);
+  font-weight: 700;
+  display: inline-block;
+  padding: 5px 15px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.user-type-switch .btn-group .btn.client-button {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.user-type-switch .btn-group .btn.seller-button {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.user-type-switch .client-button {
+  color: #ffffff;
+  background-color: #82001d;
+}
+.user-type-switch .client-button:hover {
+  background-color: #ffffff;
+  border: 1px solid #82001d;
+  transform: scale(1.05);
+  color: #82001d;
+}
+
+.user-type-switch .seller-button {
+  background-color: #ffffff;
+  border: 1px solid #82001d;
+  color: #82001d;
+}
+.user-type-switch .seller-button:hover {
+  color: #ffffff;
+  background-color: #82001d;
+  transform: scale(1.05);
+}
+
+/* Responsive tweak */
+@media only screen and (max-width: 767px) {
+  .user-type-switch .btn-group {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .user-type-switch {
+    order: 2;
+  }
+
+  .user-type-switch .btn {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .user-type-switch .btn-group {
+    gap: 4px;
+  }
+
+  .user-type-switch {
+    margin-top: 5px;
+  }
+}
+
+.my-account-dropdown-client,
+.my-account-dropdown-seller {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #ffffff;
+  opacity: 1;
+  z-index: 9;
+  min-width: 250px;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: var(--shadow-primary);
+  list-style: none;
+  margin-top: 10px;
+  visibility: hidden;
+  transition: 0ms;
+}
+
+.my-account-dropdown-client.open,
+.my-account-dropdown-seller.open {
+  visibility: visible;
+}
+
+.my-account-dropdown-client ul,
+.my-account-dropdown-seller ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px;
+}
+
+.my-account-dropdown-client .login-btn,
+.my-account-dropdown-seller .login-btn {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}

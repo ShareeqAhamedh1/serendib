@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "serendib-484717",
+  "private_key_id": "1fccbb1711e18b7af76216efd968c46ee4fbd2ee",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQClC6+qDwlmByBx\no/qVmGxvYuiS/+watA26wf5USRKzLt3KDZ81gLYYYUPw7PVD4npfn/fBHbfeT2gu\nMUcKCbnU4AwCbKW8i2LSIvv19n3N/mQ06gsDF8laMrQl8XQPj9sdNdWYQF4NgUu6\nG8kJUQHqAmJ7xmQE6BPozB0V6C+vSTMYoMM0sGZcP7GeOWK8/4zxk8ZD2BPT1u8T\ndrVeLruavyU4mqDLyVs76R7uayr5DbYu7tPLXJ6YPMwBlC75jQf6z98srHfu5kC1\nzLnFSNKnzhtyi3+qjSy07G65v1okVCb3LomDnGaEwr7pZl8NdB05lpzjRxmLGRxx\n+hgOebUDAgMBAAECggEABw5y2kB+VGBloLY0FoVHzZNbAj3y6EledOeqagwdwo90\naBkg/3abUnuGHhzjd52NQd1jCFyu6dBXUfJFaUZ1LYbOvKPMij0jYnygbSm2w0Hn\nIuQGyIER2MtmLGEgZzHtWlhc43+NBeLLTA+4Dq/p9wlXEJew2wzZHRDtBWzB7SqQ\nVKGh2Qov5YsTqqUE0N8sGfQkM1X5HUBrQoE4yBg5S6BGFXiX3wgK/bu8ieQk4SPa\ndTTnKQu8bfz3dy/Ebf6whzTrCdLT51xlgfph0T5+7kZ0nMRjz5PrzQbuDZJL9GOc\nJiYHXE+rYIer7QlohuKZwBjNaM5HjgACRYXHFwvaUQKBgQDm4GWew3CuDDDI+tVW\nzCEORfLbDPDMS7sRraFEjSS/Z7t3H2VygmBYtmYJBtyHbaBMTkk+F1aod5KJy11r\nJbEUdjkN1r87n60ep87z+57bxpZZ6aaY8q6+ER9U9I1lJOX8a9zgx4FwnEvZSEgr\nnxGrtgfbsnT2ovq3Ev1+U5+PrwKBgQC3AWqbhMwmtElFTlw9Grbv26nbuv+5QirN\nO8M7tJ/gcERkTNuFqhSWjO/3PY8d2qnuzj/0iwK4ZCV3Xwg0aK3bOYoBJGuGS+gb\nE6p3zDGIE7TXtzcTTnXJXkxcyQAdruM+qoyKvI80BFNoCA3LnZuUKxFEPdKmz07L\nMUzxupVQ7QKBgQCXYxqfMO4I4it3DaqoIG+oaUtmQSUAAMRoQh7V0WsAKueso6Sk\nokLEyM09LAecsdCDWG4ETc9f5g/rVLMr1+o2TZL5tQ9t7DTbPhOgviQbXismR+Qa\ntD7KmHWgAj9YzAoWKzAJICiLC6Fcl13jZIl0u4aJk4nIU3PsaYJYvEKLNwKBgAmF\np1hkNoMlClLy2tXLGA2u7k2ikz++c5+uJmBq646wCL73SMzRprSWrL2+lD3HbOQi\nEy3UNdYGT/TAGxsu/yzS951LmdSpCnCuO0Z0d3dPHy/CNrlocbSClZKWWs0wll5i\nXWGyofjg6L4W/TDFCJ1TCFj2polLbBwiepBxVueZAoGAGQaKVzUf5nOhGgZbDTC8\nVZNTOA4BAjX+0IYLRe+/o4Qx3SOef5XJpSMVe4AkIKxx6NjYtum6WjwNOJIh5LQQ\nblkXA35MqLY/zHhOWrOwywL8cbgsQkTqLwm0YfSj85CKQROsD16/tGRhTxiFj6oL\nWR/37kr50lX7v6+dGMsUZWQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "serendib-drive-uploader@serendib-484717.iam.gserviceaccount.com",
+  "client_id": "100575124320551158537",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/serendib-drive-uploader%40serendib-484717.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

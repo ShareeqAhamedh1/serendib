@@ -1,0 +1,461 @@
+/* =========================================================
+   SERENDIB HERO SECTION
+   ========================================================= */
+:root {
+    --serendib-navy: #031B4E;
+    --serendib-blue: #0B3D91;
+    --serendib-gold: #F4B000;
+    --serendib-white: #ffffff;
+}
+.serendib-hero {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    background-image: url('../images/img1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 20px;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 27, 78, 0.58);  /* Blue-transparent overlay */
+}
+
+.hero-content {
+    position: relative;
+    max-width: 700px;
+    z-index: 2;
+}
+
+.serendib-hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    line-height: 1.2;
+
+    text-shadow:
+        0 0 6px var(--serendib-white),
+        0 0 10px var(--serendib-white),
+        -2px -2px 0 var(--serendib-white),
+         2px -2px 0 var(--serendib-white),
+        -2px  2px 0 var(--serendib-white),
+         2px  2px 0 var(--serendib-white);
+}
+
+
+
+.serendib-hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.btn-main {
+    padding: 12px 22px;
+    background: var(--serendib-blue);
+    color: var(--serendib-white);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background: var(--serendib-navy);
+}
+
+.btn-outline {
+    padding: 12px 22px;
+    border-radius: 8px;
+    border: 2px solid var(--serendib-white);
+    color: var(--serendib-white);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+    .serendib-hero h1 {
+        font-size: 30px;
+    }
+    .serendib-hero p {
+        font-size: 16px;
+    }
+    .serendib-hero {
+        height: 70vh;
+    }
+}
+
+
+/* ========================= */
+/* GLOBAL */
+/* ========================= */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    color: var(--serendib-navy);
+    font-weight: 700;
+}
+
+.btn-main {
+    background: var(--serendib-blue);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-outline {
+    border: 2px solid var(--serendib-blue);
+    color: var(--serendib-blue);
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-main:hover,
+.btn-outline:hover {
+    opacity: 0.85;
+}
+
+
+/* ========================= */
+/* QUICK FACTS */
+/* ========================= */
+.quick-facts {
+    background: #f8fbff;
+    padding: 40px 0;
+}
+
+.quick-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 16px;
+}
+
+.quick-fact-card {
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(10,35,70,0.05);
+    border-top: 4px solid var(--serendib-gold);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.quick-fact-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(10,35,70,0.08);
+}
+
+.quick-fact-card h3 {
+    font-size: 28px;
+    color: var(--serendib-navy);
+    margin-bottom: 6px;
+}
+
+
+/* ========================= */
+/* PROGRAMS SECTION */
+/* ========================= */
+.programs {
+    padding: 40px 0;
+}
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.view-link {
+    color: #0b69c6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    gap: 18px;
+}
+
+.program-card {
+    background: white;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 6px 18px rgba(11,38,80,0.05);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-8px);
+    box-shadow:0 12px 25px rgba(3,27,78,0.14);
+}
+
+.program-card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 6px 18px rgba(3,27,78,0.06);
+}
+
+
+/* ========================= */
+/* NEWS - COMING SOON */
+/* ========================= */
+.news-comingsoon {
+    background: #f8fbff;
+    padding: 40px 0;
+}
+
+.coming-soon-tag {
+    background: #0b69c6;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.coming-soon-box {
+    margin-top: 20px;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    text-align: center;
+    color: #51607a;
+    box-shadow: 0 6px 18px rgba(11,38,80,0.04);
+}
+
+
+/* ========================= */
+/* WHY SERENDIB */
+/* ========================= */
+.why-serendib {
+    padding: 40px 0;
+}
+
+.why-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.why-text {
+    flex: 1 1 420px;
+}
+
+.why-images {
+    flex: 1 1 420px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.why-images img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* ========================= */
+/* ADMISSIONS CTA */
+/* ========================= */
+.admissions-cta {
+    background: linear-gradient(90deg, #fef7e0, #ffffff);
+    padding: 32px 0;
+}
+
+.cta-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* ========================= */
+/* TESTIMONIALS */
+/* ========================= */
+.testimonials {
+    padding: 40px 0;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 16px;
+}
+
+.testimonial-item {
+    background: #fff;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(11,38,80,0.05);
+}
+
+.testimonial-item span {
+    margin-top: 10px;
+    display: block;
+    color: #0b2f5a;
+    font-weight: bold;
+}
+
+
+/* ========================= */
+/* NEWSLETTER */
+/* ========================= */
+.newsletter {
+    padding: 40px 0;
+    background: #f8fbff;
+}
+
+.newsletter-box {
+    text-align: center;
+}
+
+.newsletter input {
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #d8e4f5;
+}
+
+
+@media (max-width: 600px) {
+    .hero-content h1 { font-size: 30px; }
+}
+/* WHY SERENDIB */
+.why-serendib {
+    padding: 50px 0;
+    background: #ffffff;
+}
+
+.why-wrapper {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.why-text {
+    flex: 1 1 420px;
+}
+
+.why-text h2 {
+    font-size: 28px;
+    color: #0b2f5a;
+    margin-bottom: 14px;
+}
+
+.why-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 18px;
+}
+
+.why-list li {
+    margin-bottom: 12px;
+    color: #424b63;
+    font-size: 15px;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+}
+
+.why-list li::before {
+    content: "✔";
+    color: #0b69c6;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.why-buttons {
+    margin-top: 18px;
+    display: flex;
+    gap: 14px;
+}
+
+.btn-outline-dark {
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: 2px solid #0b2f5a;
+    color: #0b2f5a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-outline-dark:hover {
+    background: #0b2f5a;
+    color: white;
+}
+
+/* IMAGES GRID */
+.why-images {
+    flex: 1 1 440px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.why-img-box {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(11, 38, 80, 0.08);
+    transition: 0.3s ease;
+}
+
+.why-img-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Hover effect */
+.why-img-box:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 28px rgba(11, 38, 80, 0.15);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .why-images img {
+        height: 130px;
+    }
+}

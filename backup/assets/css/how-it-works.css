@@ -1,0 +1,42 @@
+.card-body h4 {
+  color: #82001d;
+}
+
+.ready-start-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.ready-start-box .title {
+  margin: 0;
+}
+
+.ready-start-box a {
+  padding: 5px 20px;
+  font-size: 16px;
+  background: #82001d;
+  border-radius: 10px;
+  color: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.ready-start-box a:hover {
+  transform: scale(1.15);
+  background: linear-gradient(to bottom, #82001d, #b3364a, #d47b85);
+}
+
+@media only screen and (max-width: 575px) {
+  .ready-start-box a {
+    font-size: 14px;
+  }
+
+  .ready-start-box {
+    padding: 10px;
+  }
+
+  .ready-start-box .title {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,39 @@
+/* Categories Section */
+.categories-section {
+    padding: 60px 0;
+    background: var(--bg-light);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.category-card {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+}
+
+.category-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.category-card h3 {
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,135 @@
+/* Base Styles */
+.summery-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.axil-order-summery.order-checkout-summery .summery-table th {
+  background-color: #f7f7f7;
+  text-align: left;
+  padding: 12px 15px;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.axil-order-summery.order-checkout-summery .summery-table tr:last-child td {
+  padding: 12px 15px;
+}
+
+.summery-table tbody td {
+  padding: 12px 15px;
+  font-size: 15px;
+  color: #444;
+  border-bottom: 1px solid #eee;
+}
+
+.summery-table .order-product .quantity {
+  font-weight: 500;
+  color: #666;
+  margin-left: 6px;
+}
+
+.summery-table .order-subtotal td,
+.summery-table .order-shipping td,
+.summery-table .order-total td {
+  font-weight: 600;
+  color: #000;
+}
+
+.summery-table .order-total {
+  background-color: #f0f8f0;
+  font-size: 17px;
+}
+
+.summery-table .order-total-amount {
+  font-weight: 700;
+  color: #006400;
+}
+
+/* Shipping Options */
+.summery-table .input-group {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.summery-table .input-group input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #82001d;
+}
+
+.summery-table .input-group label {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Shipping Option Row (Full Width + Flex) */
+.order-shipping td.order-shipping-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+  padding: 12px 10px;
+}
+
+.order-shipping-group .input-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: auto;
+}
+
+.axil-order-summery .summery-table tbody td {
+  min-width: auto;
+}
+
+.order-shipping-group label {
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* ✅ Responsive Layout for Small Screens */
+@media (max-width: 768px) {
+  .summery-table,
+  .summery-table tbody,
+  .summery-table tr,
+  .summery-table td {
+    width: 100%;
+  }
+
+  .summery-table tr {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+
+  .summery-table td {
+    text-align: left;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .summery-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    font-weight: 600;
+    color: #555;
+    text-align: left;
+  }
+
+  .order-shipping td.order-shipping-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-shipping-group .input-group {
+    width: 100%;
+  }
+}
